@@ -1,7 +1,9 @@
 ## HODLINFO Website Copy Assignment
 
+## Project is Successfully Deployed 🎉
+
 ### Project LIVE URL
-[Full Stack]()
+[Full Website With Backend](https://crypto-exchange-noton.netlify.app)
 
 
 ### Project Backend URL

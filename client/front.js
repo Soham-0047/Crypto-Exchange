@@ -25,7 +25,7 @@ let count =0;
 const arr = ["WazirX","Bitbns","Coldax","Zebpay","CoinDCX"]
 
 function fetchDataAndUpdateTable() {
-    fetch('http://localhost:8000/update')
+    fetch('https://crypto-fz0b.onrender.com/update')
         .then((response) => response.json())
         .then((data) => {
             const tableBody = document.getElementById('crypto-data-table');
