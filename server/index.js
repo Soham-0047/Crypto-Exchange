@@ -10,9 +10,7 @@ dotenv.config();
 
 
 //* For the cross origin policy conflict
-app.use(cors({
-    origin:'http://127.0.0.1:5500'
-}))
+app.use(cors())
 
 app.use(express.json());
 
