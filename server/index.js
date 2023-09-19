@@ -14,6 +14,12 @@ app.use(cors())
 
 app.use(express.json());
 
+//* Simple conformation message
+
+app.get("/", (req,res) =>{
+    res.json({message:"OK"})
+})
+
 //Create a Connection here
 // const connectDb = async () => {
 //     try {
@@ -131,7 +137,8 @@ app.get('/update', async(req,res) =>{
 
         // Send the updated data as a JSON response
         res.status(200).json(result.rows);
-        console.log("result ",result.rows)
+        // console.log("result ",result.rows)
+        console.log("Results got")
         
         await client.query('COMMIT')
         
@@ -147,14 +154,11 @@ app.get('/update', async(req,res) =>{
     }
 })
 
-//* Simple conformation message
 
-app.get("/", (req,res) =>{
-    res.json({message:"OK"})
-})
 
+const PORT = process.env.PORT || 8000;
 
 //* Website will listen in this port
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:8000`)
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`)
 })
