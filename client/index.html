@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+<body>
+
+    <!--Navbar-->
+
+    <div class="nav">
+
+        <div class="nav-wrap">
+            <div class="row row-im">
+                <img src="https://hodlinfo.com/static/media/HODLINFO_white.8f78fc06.png" alt="img">
+            </div>
+            <div class="row bt-row">
+
+                <div class="row-btn-wrap">
+                    <button>INR <span id="icon"><i class="fa fa-caret-down"></i> </span></button>
+                    <div class="row-btn-wrap-content">
+                        <a href="">INR</a>
+                        <a href="">BTC</a>
+                        <a href="">USDT</a>
+                        <a href="">XRP</a>
+                        <a href="">TRX</a>
+                    </div>
+                </div>
+
+                <div class="row-btn-wrap">
+                    <button>BTC <span id="icon"><i class="fa fa-caret-down"></i> </span></button>
+                    <div class="row-btn-wrap-content">
+                        <a href="">INR</a>
+                    </div>
+                </div>
+
+                <div class="row-btn-wrap">
+                    <button>BUY</button>
+                </div>
+
+
+            </div>
+            <div class="row row-social">
+
+                <div class="row-social1">
+
+                    <div id="countdown-number"></div>
+                    <svg>
+                        <circle r="18" cx="20" cy="20"></circle>
+                    </svg>
+
+                </div>
+                <div class="row-social2">
+                    <button>Connect Telegram</button>
+                </div>
+                <div class="row-social3">
+                    <div class="toggle">
+                        <span id="cir"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ShowCase-->
+
+    <div class="showcase">
+
+        <h3>Best Price to Trade</h3>
+        <div class="show-wrap">
+            <div class="col">
+                <span>0.97 %</span>
+                <span>5 Min</span>
+            </div>
+            <div class="col">
+                <span>1.97 %</span>
+                <span>1 Hour</span>
+            </div>
+            <div class="col col-main">
+                <span>₹ 24,54,128</span>
+                
+            </div>
+            <div class="col">
+                <span>2.14 %</span>
+                <span>1 Day</span>
+            </div>
+            <div class="col">
+                <span>8.82 %</span>
+                <span>7 Days</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Table-->
+
+    <div class="tab">
+
+        <h4>Average BTC/INR net price including commision</h4>
+        <table id="bit">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Base Unit</th>
+                    <th>Name</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Volume</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <!-- id="crypto" -->
+            <tbody id="crypto-data-table" >
+                <!-- Data will be populated here dynamically -->
+              
+            </tbody>
+        </table>
+    </div>
+
+
+    <!--Javascript Code -->
+
+    <script src="front.js"></script>
+</body>
+
+</html>
